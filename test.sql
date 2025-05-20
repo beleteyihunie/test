@@ -1,0 +1,10 @@
+CREATE DATABASE IF NOT EXISTS test;
+
+USE test;
+
+CREATE TABLE IF NOT EXISTS test (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    full_name VARCHAR(100) NOT NULL,
+    age INT NOT NULL,
+    sex ENUM('Male', 'Female', 'Other') NOT NULL
+);
